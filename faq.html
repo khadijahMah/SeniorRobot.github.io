@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Almendra' rel='stylesheet'>
+<style>
+.item1 { grid-area: faq; }
+.item2 { grid-area: content; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'faq faq faq faq faq faq'
+    'content content content content content content'
+    'content content content content content content'
+    'content content content content content content'
+    'content content content content content content';
+  grid-gap: 20px;
+  background-color:#fff;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  background-color:#fff;
+  padding: 20px 0;
+  font-size: 30px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+     color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #555;
+}
+body{
+   background-color: #01183d;
+}
+
+</style>
+</head>
+<body>
+
+<div class="content" style="width:80%;margin-top:30px;margin-left:auto;margin-right:auto;">
+<ul>
+  <li><a href="senior_pro_web.html">Home</a></li>
+  <li><a href="research.html">Research</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+</ul>
+
+<div class="grid-container">
+  <div class="item1" style="background-color:#cbd9ef;font-family: 'Almendra';"><h1>Frequently Asked Questions<h1></div>
+  <div class="item2">
+	
+	<!-- Fix this is so that the text isn't centered -->
+	<ol>
+  		<li><strong>Quest 1</strong> Answer</li>
+  		<li><strong>Quest 2</strong> Answer</li>
+  		<li><strong>Quest 3</strong> Answer</li>
+		<li><strong>Quest 4</strong> Answer</li>
+		<li><strong>Quest 5</strong> Answer</li>
+		<li><strong>Quest 6</strong> Answer</li>
+		<li><strong>Quest 7</strong> Answer</li>
+		<li><strong>Quest 8</strong> Answer</li>
+		<li><strong>Quest 9</strong> Answer</li>
+		<li><strong>Quest 10</strong> Answer</li>
+	</ol>
+  </div>
+</div>
+</div>
+</body>
+</html>
