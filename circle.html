@@ -98,6 +98,7 @@ body{
   -o-transition:      all 6s cubic-bezier(0,.99,.44,.99);
   -ms-transition:     all 6s cubic-bezier(0,.99,.44,.99);
   transition:         all 6s cubic-bezier(0,.99,.44,.99); 
+  animation: 1s ease-out 0s 1 spinAuto;
 }
 
 /*Wheel and Wheel Colors*/
@@ -303,6 +304,16 @@ opacity:0.1;
   50%{
     transform: rotate(7deg);
     -webkit-transform: rotate(7deg);
+  }
+}
+
+  @keyframes spinAuto {
+  0% {
+    transform: rotateZ(360deg);
+    transition: all .3s ease-in;
+  }
+  100% {
+    transform: rotateZ(0deg);
   }
 }
 
